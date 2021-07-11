@@ -1,10 +1,12 @@
 # ocr-cpi-covid19
 
-## Prepare Environment
+## Requirements
 
-Ensure you have `imagemagick` and `tesseract` installed before run `npm install`
-
-To install those use `brew`, `apt` or `chocolatey` (some additional config on windows will be required)
+- `imagemagick`
+- `tesseract`
+- `brew` (For MacOS)
+- `Node v14`
+- `npm` or `yarn`
 
 ## Install
 
@@ -12,4 +14,12 @@ To install those use `brew`, `apt` or `chocolatey` (some additional config on wi
 
 ## Process files
 
-### 
+### PDF Images
+
+Some PDFs are images, so they need conversion before pass on OCR, to facilitate that it I created the `convert-pdf-images`,
+
+__STEP 1__ 
+Run `node convert-pdf-images`, so you can generate PNGs from it, after pass filelocation with filename
+
+__STEP 2__
+Run `node ocr.js` after change the json for filelist

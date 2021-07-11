@@ -1,4 +1,5 @@
-const tesseract = require("node-tesseract-ocr")
+const tesseract = require("node-tesseract-ocr");
+const ocrFileList = require('./ocr-filelist.json');
 
 const config = {
   lang: "por",
@@ -6,18 +7,12 @@ const config = {
   psm: 3,
 };
 
-const images = [
-  "./example-doc/DocumentoRecebidoCPIPANDEMIA1Carta04052021145626969RECIBOCOD2894-0.png",
-  "./example-doc/DocumentoRecebidoCPIPANDEMIA1Carta04052021145626969RECIBOCOD2894-1.png",
-  "./example-doc/DocumentoRecebidoCPIPANDEMIA1Carta04052021145626969RECIBOCOD2894-2.png",
-];
-
 tesseract
-  .recognize(images, config)
+  .recognize(ocrFileList.files, config)
   .then((text) => {
     console.log("Result:", text);
 
-    
+
   })
   .catch((error) => {
     console.log(error.message);
