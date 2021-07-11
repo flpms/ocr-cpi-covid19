@@ -2,7 +2,7 @@
 
 For more details, follow the series in my blog
 
-(Coletando os dados da CPI - Parte I)[https://flpms.me/coletando-os-dados-da-cpi-parte-i/]
+[(Coletando os dados da CPI - Parte I](https://flpms.me/coletando-os-dados-da-cpi-parte-i/)
 
 ## Requirements
 
