@@ -1,0 +1,23 @@
+{
+  "name": "ocr-cpi-covid19",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flpms/ocr-cpi-covid19.git"
+  },
+  "author": "Filipe M. Silva (@flpms)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flpms/ocr-cpi-covid19/issues"
+  },
+  "homepage": "https://github.com/flpms/ocr-cpi-covid19#readme",
+  "dependencies": {
+    "node-tesseract-ocr": "^2.2.1"
+  }
+}
